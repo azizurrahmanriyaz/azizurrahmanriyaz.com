@@ -301,8 +301,8 @@ footer .wrap { display: flex; justify-content: space-between; align-items: cente
 }
 @media (max-width: 600px) {
   .wrap { padding: 0 16px; }
-  .brand { display: none; }
-  nav ul { margin-left: 0; }
+    .brand { font-size: 16px; }
+  nav .wrap { gap: 12px; }
   .hero { padding: 48px 0 56px; }
   section { padding: 64px 0; }
   .lede { font-size: 17px; }
@@ -324,6 +324,9 @@ nav ul a { color: rgba(255,255,255,.82); }
 nav ul a:hover, nav ul a.active { color: #ffffff; background: rgba(255,255,255,.15); }
 .theme-btn { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.35); color: #ffffff; }
 .theme-btn:hover { border-color: #ffffff; color: #ffffff; }
+   @media (max-width: 600px) {
+  .theme-btn { background: transparent; border-color: transparent; }
+}
 </style>
 </head>
 <body>
@@ -331,14 +334,14 @@ nav ul a:hover, nav ul a.active { color: #ffffff; background: rgba(255,255,255,.
 <!-- =================== NAVIGATION =================== -->
 <nav id="nav">
   <div class="wrap">
-    <a class="brand" href="#top">Personal <span>Blog</span></a>
+    <a class="brand" href="#top">Riyaz <span>Portfolio</span></a>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#blog">Blog</a></li>
-      <li><a href="#photography">Photography</a></li>
+      <li><a href="#photography">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="theme-btn" id="themeBtn" aria-label="Switch light or dark mode">
@@ -407,10 +410,10 @@ nav ul a:hover, nav ul a.active { color: #ffffff; background: rgba(255,255,255,.
       </div>
       <div class="reveal">
         <div class="stats">
-          <div class="stat"><b>4</b><span>Research placements and internships in Sweden and Bangladesh</span></div>
-          <div class="stat"><b>4</b><span>Organizational affiliation</span></div>
-          <div class="stat"><b>4</b><span>Journal Articles and conference abstracts</span></div>
-          <div class="stat"><b>3</b><span>National and EU scholarships</span></div>
+          <div class="stat"><b>4</b><span>Research Labs and Internships in Sweden and Bangladesh</span></div>
+          <div class="stat"><b>4</b><span>Organizational Affiliation</span></div>
+          <div class="stat"><b>4</b><span>Journal Articles and Conference Abstracts</span></div>
+          <div class="stat"><b>3</b><span>National and EU Scholarships</span></div>
         </div>
         <div class="now"><b>Currently</b>Studying Innovation in Bioengineering at the University of Tartu, and open to Master's thesis projects in cancer biology and immunology.</div>
       </div>
@@ -422,7 +425,7 @@ nav ul a:hover, nav ul a.active { color: #ffffff; background: rgba(255,255,255,.
 <section id="research">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div><div class="sec-num">02 · Research</div><h2>Research experience</h2></div>
+      <div><div class="sec-num">02 · Research</div><h2>Research Experience</h2></div>
           </div>
 
     <div class="timeline">
@@ -642,7 +645,7 @@ nav ul a:hover, nav ul a.active { color: #ffffff; background: rgba(255,255,255,.
 <section id="photography">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div><div class="sec-num">06 · Photography</div><h2>Through my lens</h2></div>
+      <div><div class="sec-num">06 · Gallery</div><h2>Through my lens</h2></div>
       <p>Places, people and small moments from Bangladesh, Sweden, Estonia and beyond.</p>
     </div>
 
@@ -651,9 +654,7 @@ nav ul a:hover, nav ul a.active { color: #ffffff; background: rgba(255,255,255,.
       <figure class="shot"><img src="photos/photo2.jpg" alt="Photo 2" loading="lazy"><figcaption>Caption for photo 2</figcaption></figure>
       <figure class="shot"><img src="photos/photo3.jpg" alt="Photo 3" loading="lazy"><figcaption>Caption for photo 3</figcaption></figure>
       <figure class="shot wide"><img src="photos/photo4.jpg" alt="Photo 4" loading="lazy"><figcaption>Caption for photo 4</figcaption></figure>
-      <figure class="shot"><img src="photos/photo5.jpg" alt="Photo 5" loading="lazy"><figcaption>Caption for photo 5</figcaption></figure>
-      <figure class="shot wide"><img src="photos/photo6.jpg" alt="Photo 6" loading="lazy"><figcaption>Caption for photo 6</figcaption></figure>
-    </div>
+      <figure class="shot wide"><img src="photos/photo4.jpg" alt="Photo 4" loading="lazy"><figcaption>Caption for photo 4</figcaption></figure>
     <p class="muted reveal" style="text-align:center;margin:28px 0 0;font-size:15px">More on <a href="https://www.instagram.com/azizur.riyaz/" target="_blank" rel="noopener">Instagram @azizur.riyaz</a></p>
   </div>
 </section>
